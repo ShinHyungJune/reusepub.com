@@ -5,6 +5,7 @@ import {Provider} from 'react-redux';
 import AuthRoute from './components/common/AuthRoute';
 import store from './store';
 
+import Example from './pages/Example';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import SendResetPasswordMail from './pages/SendResetPasswordMail';
@@ -20,6 +21,7 @@ function Index() {
         
 					<div className="wrap-contents">
 						<Switch>
+							<Route exact path="/" component={Example}/>
 							<Route exact path="/login" component={Login}/>
 							<Route exact path="/register" component={Register}/>
 							<Route exact path="/sendResetPasswordMail" component={SendResetPasswordMail} />

@@ -30,7 +30,7 @@ Route::post('/passwordReset/send', 'Api\PasswordResetController@sendMail');
 Route::post('/passwordReset', 'Api\PasswordResetController@reset');
 
 Route::group(["middleware" => "auth:api"], function() {
-
+    Route::resource("/projects", "Api\ProjectController");
 });
 
 

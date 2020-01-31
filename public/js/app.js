@@ -57690,11 +57690,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./store */ "./resources/js/store.ts");
-/* harmony import */ var _pages_Login__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/Login */ "./resources/js/pages/Login.tsx");
-/* harmony import */ var _pages_Register__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/Register */ "./resources/js/pages/Register.tsx");
-/* harmony import */ var _pages_SendResetPasswordMail__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages/SendResetPasswordMail */ "./resources/js/pages/SendResetPasswordMail.tsx");
-/* harmony import */ var _pages_ResetPassword__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/ResetPassword */ "./resources/js/pages/ResetPassword.tsx");
-/* harmony import */ var _components_common_Flash__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/common/Flash */ "./resources/js/components/common/Flash.tsx");
+/* harmony import */ var _pages_Example__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/Example */ "./resources/js/pages/Example.tsx");
+/* harmony import */ var _pages_Login__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/Login */ "./resources/js/pages/Login.tsx");
+/* harmony import */ var _pages_Register__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages/Register */ "./resources/js/pages/Register.tsx");
+/* harmony import */ var _pages_SendResetPasswordMail__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/SendResetPasswordMail */ "./resources/js/pages/SendResetPasswordMail.tsx");
+/* harmony import */ var _pages_ResetPassword__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pages/ResetPassword */ "./resources/js/pages/ResetPassword.tsx");
+/* harmony import */ var _components_common_Flash__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/common/Flash */ "./resources/js/components/common/Flash.tsx");
+
 
 
 
@@ -57709,24 +57711,28 @@ __webpack_require__.r(__webpack_exports__);
 function Index() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_redux__WEBPACK_IMPORTED_MODULE_3__["Provider"], {
     store: _store__WEBPACK_IMPORTED_MODULE_4__["default"]
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["BrowserRouter"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_common_Flash__WEBPACK_IMPORTED_MODULE_9__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["BrowserRouter"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_common_Flash__WEBPACK_IMPORTED_MODULE_10__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "wrap-contents"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
     exact: true,
+    path: "/",
+    component: _pages_Example__WEBPACK_IMPORTED_MODULE_5__["default"]
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+    exact: true,
     path: "/login",
-    component: _pages_Login__WEBPACK_IMPORTED_MODULE_5__["default"]
+    component: _pages_Login__WEBPACK_IMPORTED_MODULE_6__["default"]
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
     exact: true,
     path: "/register",
-    component: _pages_Register__WEBPACK_IMPORTED_MODULE_6__["default"]
+    component: _pages_Register__WEBPACK_IMPORTED_MODULE_7__["default"]
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
     exact: true,
     path: "/sendResetPasswordMail",
-    component: _pages_SendResetPasswordMail__WEBPACK_IMPORTED_MODULE_7__["default"]
+    component: _pages_SendResetPasswordMail__WEBPACK_IMPORTED_MODULE_8__["default"]
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
     exact: true,
     path: "/passwordReset/:token",
-    component: _pages_ResetPassword__WEBPACK_IMPORTED_MODULE_8__["default"]
+    component: _pages_ResetPassword__WEBPACK_IMPORTED_MODULE_9__["default"]
   }))))));
 }
 
@@ -58077,6 +58083,34 @@ var mapDispatch = function mapDispatch(dispatch) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["connect"])(null, mapDispatch)(Form));
+
+/***/ }),
+
+/***/ "./resources/js/pages/Example.tsx":
+/*!****************************************!*\
+  !*** ./resources/js/pages/Example.tsx ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_common_Form__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/common/Form */ "./resources/js/components/common/Form.tsx");
+
+
+
+var Example = function Example() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_common_Form__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    method: "post",
+    url: "/api/projects"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "file"
+  })));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Example);
 
 /***/ }),
 
