@@ -1,0 +1,136 @@
+// Variables
+@import 'variables';
+
+// Reset
+@import "default";
+
+// Animate
+@import 'animate';
+
+html {background-color:#E4E4E4;}
+
+.width-50 {width:50% !important;}
+.width-49 {width:49% !important;}
+.width-33 {width:33.33% !important;}
+.width-25 {width:25% !important;}
+.float {float:left;}
+.inline-block {display:inline-block;}
+
+.align-right {text-align:right;}
+.align-left {text-align:left;}
+.align-center {text-align:center;}
+
+.align-items {margin:0 -20px;}
+.align-items:after {display:block; content:""; clear:both;}
+.align-item {width:33.33%; padding:15px; float:left;}
+
+/* tabs */
+.tabs-btns {margin-bottom:30px; text-align:center;}
+.tabs-btns:after {display:block; content:""; clear:both;}
+.tabs .tabs-btn {display:inline-block; margin:0 10px; padding:10px 20px; font-size:18px; font-weight:500; box-shadow:0px 3px 6px rgba(0,0,0,0.16); transition:background-color .3s, color .3s;}
+.tabs .tabs-btn span {color:#333; transition:color .3s;}
+.tabs .tabs-btn:hover {color:#fff; background-color:#333;}
+.tabs .tabs-btn:hover span {color:#fff;}
+.tabs .tabs-btn.active {color:#fff; background-color:#333;}
+.tabs .tabs-btn.active span {color:#fff;}
+.tabs-contents .tabs-content {display:none;}
+.tabs-contents .tabs-content.active {display:block;}
+
+.clearfix:after {display:block; content:""; clear:both;}
+
+.empty {position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); font-size:24px; text-align:center;}
+
+.bg-gray {background-color:#707070;}
+.bg-999 {background-color:#999;}
+.bg-black {background-color:#333;}
+.bg-white {background-color:#fff;}
+.bg-primary {background-color:#D78E71;}
+.bg-sub01 {background-color:#9FCBF8;}
+.bg-sub02 {background-color:#6FBEC2;}
+.bg-accent {background-color:#D117B8;}
+
+.border-primary {border-color:#D78E71 !important;}
+.border-sub01 {border-color:#9FCBF8 !Important;}
+.border-sub02 {border-color:#6FBEC2 !important;}
+
+.black {width:100%; height:100%; position:fixed; top:0; left:0; background-color:rgba(255,255,255,0.4); z-index:2;}
+.white {color:#fff !important;}
+.red {color:#D77171 !important;}
+.primary {color:#D78E71}
+.sub01 {color:#9FCBF8}
+.sub02 {color:#6FBEC2}
+.accent {color:#D117B8;}
+
+.box-shadow {box-shadow:0px 3px 6px rgba(0,0,0,0.16);}
+
+.message {padding:7px 20px; position:fixed; right:100px; bottom:100px; color:#fff; box-shadow:0px 3px 6px rgba(0,0,0,0.16);}
+
+.table {border-collapse: separate; border-spacing:0 20px;}
+.table th {font-weight:bold;}
+.table tbody tr:hover {background-color:#6FBEC2;}
+.table tbody tr:hover td {color:#fff;}
+.table tbody tr:hover td p {color:#fff;}
+.table tbody tr:hover td span {color:#fff;}
+.table tbody tr.active {background-color:#6FBEC2;}
+.table tbody tr.active td {color:#fff;}
+.table tbody tr.active td p {color:#fff;}
+.table tbody tr.active td span {color:#fff;}
+.table tbody tr {position:relative; box-shadow:0px 3px 6px rgba(0,0,0,0.16); will-change: background-color; cursor:pointer;}
+.table td {height:60px; padding:10px 15px; position:relative; text-align:center; will-change: color;}
+.table td:first-child {border-left:3px solid #6FBEC2;}
+.table-states {position:absolute; right:10px; top:0px;}
+.table-states span {margin-left:5px; font-size:12px; }
+
+.pop-util {width:300px; padding:30px 20px; padding-bottom:0; position:fixed; top:49%; left:50%; transform:translate(-50%, -50%); background-color:#fff; box-shadow:0px 3px 6px rgba(0,0,0,0.16); border:2px solid #333; z-index:3;}
+.pop-util-title {margin-bottom:25px; font-size:18px; font-weight:500; text-align:center;}
+.pop-util-btns {display:flex; margin-top:30px; margin-bottom:20px;}
+.pop-util-btn {flex:1; margin:0 3px;}
+form .pop-util-btns {margin-bottom:-20px;}
+
+input:disabled {background-color:rgba(215,142,113, 0.6); color:#fff !important;}
+.input input[type="hidden"] + .input-error {display:none;}
+.input-title {margin-bottom:5px; font-size:12px; font-weight:300; color:#999;}
+.input-error {margin-top:5px; margin-bottom:5px; font-size:14px; font-weight:300; color:#D77171;}
+.input-wrap {margin-bottom:10px;}
+.input-multi .input input {border-left:none;}
+.input-multi .input:first-child input {border-left:1px solid #ccc;}
+.input input {width:100%; padding:5px 15px; font-weight:400; border:1px solid #ccc; color:#333; transition:border-color .5s;}
+.input select {width:100%; padding:5px 15px; font-weight:400; border:1px solid #ccc;}
+.input-checkbox {display:inline-block; margin-right:10px; }
+.input-checkbox input {display:none;}
+.input-checkbox label { padding:5px 10px; font-size:12px; font-weight:300; color:#fff; transition:opacity .3s, box-shadow .3s; opacity:0.3;}
+.input-checkbox:nth-of-type(1) label {background-color:#9FCBF8;}
+.input-checkbox:nth-of-type(2) label {background-color:#BBBB20;}
+.input-checkbox:nth-of-type(3) label {background-color:#D117B8;}
+.input-checkbox:nth-of-type(4) label {background-color:#B72D89;}
+.input-checkbox:nth-of-type(5) label {background-color:#D78E71;}
+.input-checkbox:nth-of-type(6) label {background-color:#6FBEC2;}
+.input-checkbox input.active + label {opacity:1; box-shadow:0px 3px 6px rgba(0,0,0,0.16);}
+.input-checkbox:hover label {opacity:1; box-shadow:0px 3px 6px rgba(0,0,0,0.16);}
+
+.wrap-1200 {width:1200px; margin:0 auto;}
+.wrap-mobile {width:320px; margin:0 auto; padding:45px 25px; padding-top:130px; padding-bottom:60px;}
+.wrap-contents {margin-top:40px;}
+
+#login {}
+#login .logo img {display:block; margin:0 auto; margin-bottom:100px;}
+#login .input {margin-top:30px;}
+#login .input:first-child {margin-top:0px;}
+#login .input input {border:none; border-bottom:1px solid #e1e1e1;}
+#login .links {margin-bottom:60px;}
+#login .links a {font-size:14px;}
+#login .links button {font-size:14px;}
+
+#register .logo img {display:block; margin:0 auto; margin-bottom:30px;}
+#register .input {margin-top:20px;}
+#register .input:first-child {margin-top:0px;}
+#register .input input {border:none; border-bottom:1px solid #e1e1e1;}
+#register button {margin-top:30px;}
+
+@media screen and (max-width: 1200px){
+    .wrap-1200 {width:100%; padding:0 20px;}
+}
+
+@media screen and (max-width: 500px){
+    .wrap-mobile {width:100%; padding:0 20px;}
+}
